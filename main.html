@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahedul Islam | UI/UX Designer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-flex">
+            <a href="#home" class="logo">Jahedul<span>.Design</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="cv.pdf" class="btn-primary" download>Download CV <i class="fas fa-download"></i></a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="container hero-wrapper">
+            <div class="hero-text">
+                <span class="subtitle">Hello, I am</span>
+                <h1>Jahedul Islam</h1>
+                <h2>UI/UX Designer & <br>Frontend Developer</h2>
+                <p>Crafting user-centric digital experiences with a focus on clean aesthetics and functional design.</p>
+                <div class="cta-group">
+                    <a href="#projects" class="btn-secondary">View My Work</a>
+                    <a href="cv.pdf" class="btn-outline" download>Get Resume</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/user (1).png" alt="Jahedul Islam 3D Avatar">
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section-padding">
+        <div class="container">
+            <h3 class="section-title">About Me</h3>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>I am a passionate UI/UX designer based in Bangladesh. I specialize in transforming complex problems into simple, beautiful, and intuitive interface designs.</p>
+                    <p>My workflow blends design thinking with technical execution using HTML, CSS, and JavaScript to bridge the gap between design and development.</p>
+                    
+                    <div class="skills-list">
+                        <span>Figma</span>
+                        <span>Adobe XD</span>
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Mobile App Design</span>
+                    </div>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-box">
+                        <h4>3+</h4>
+                        <p>Years Experience</p>
+                    </div>
+                    <div class="stat-box">
+                        <h4>50+</h4>
+                        <p>Projects Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding bg-light">
+        <div class="container">
+            <h3 class="section-title">Selected Projects</h3>
+            <div class="project-grid">
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-3 (1).png" alt="US Store E-commerce App">
+                    </div>
+                    <div class="project-info">
+                        <h4>US Store App</h4>
+                        <p class="project-tags">E-Commerce • UI Design</p>
+                        <p>A clean mobile interface for an electronics store featuring product grids and easy checkout.</p>
+                        <a href="#" class="link-arrow">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-2 (1).png" alt="Music Streaming App">
+                    </div>
+                    <div class="project-info">
+                        <h4>Music Streaming UI</h4>
+                        <p class="project-tags">App Design • User Flow</p>
+                        <p>An immersive music player interface focusing on "Uniquely Yours" personalization algorithms.</p>
+                        <a href="#" class="link-arrow">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="images/work-1 (1).png" alt="iOS Home Screen Setup">
+                    </div>
+                    <div class="project-info">
+                        <h4>iOS Widget System</h4>
+                        <p class="project-tags">System Design • Interaction</p>
+                        <p>Optimized home screen layout focusing on productivity widgets and app organization.</p>
+                        <a href="#" class="link-arrow">View Case Study <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding">
+        <div class="container">
+            <h3 class="section-title">Let's Work Together</h3>
+            <div class="contact-wrapper">
+                <div class="contact-text">
+                    <p>Have a project in mind? Fill out the form below or send me an email directly.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-dribbble"></i></a>
+                        <a href="#"><i class="fab fa-behance"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+
+                <form name="submit-to-google-sheet" class="contact-form">
+                    <div class="input-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" id="submitBtn">Send Message</button>
+                    <span id="msg" style="display:block; margin-top:10px; color: green; font-weight:600;"></span>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Jahedul Islam. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
